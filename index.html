@@ -1,0 +1,17 @@
+<script src="auth.js"  type="text/javascript"></script>
+
+<input id="is-running" type="hidden" value="true"></input>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<div class="outer-wrapper">
+	<div class="inner-wrapper">
+		<button onclick="sendTokenRequest()">Get access token</button>
+		<input id="token-val" type="text" placeholder="Enter your access token here..."></input>
+	</div>
+	<div class="inner-wrapper">
+		<button onclick="sendStartupRequest()">Start updating my status</button>
+		<button onclick="stopStatusUpdating()">Stop updating my status</button>
+	</div>
+	<div class="inner-wrapper">
+		<textarea id="log" name="log" cols="40" rows="5" readonly="true"></textarea>
+	</div>
+</div>
